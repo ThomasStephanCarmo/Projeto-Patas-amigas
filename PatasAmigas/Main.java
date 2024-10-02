@@ -1,13 +1,10 @@
-Armazenamento cheio … 
-Você usou todo seu armazenamento individual de 30 MB. Para fazer upload de mais arquivos, libere espaço ou fale com seu administrador.
-
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Pessoa pessoa = new Pessoa();
+//        Pessoa pessoa = new Pessoa();
 
         System.out.println("Bem-vindo ao sistema de gerenciamento de Pessoas!");
 
@@ -20,9 +17,9 @@ public class Main {
             System.out.println("4. Sair");
 
             int choice = scanner.nextInt();
-            scanner.nextLine();  
+            scanner.nextLine();
 
-            switch (choice) {
+/*             switch (choice) {
                 case 1:
                     pessoa = criarPessoa(scanner);
                     break;
@@ -38,13 +35,13 @@ public class Main {
                     break;
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
-            }
+            }*/
         }
 
         scanner.close();
     }
 
-    private static Pessoa criarPessoa(Scanner scanner) {
+/*     private static Pessoa criarPessoa(Scanner scanner) {
         System.out.println("\n--- Criar Nova Pessoa ---");
 
         System.out.print("Nome: ");
@@ -80,18 +77,18 @@ public class Main {
         // Você pode definir o ID da pessoa conforme necessário (ex: auto-incremento ou geração manual)
         int idPessoa = 1; // Exemplo de ID fixo
 
-        Pessoa novaPessoa = new Pessoa(idPessoa, nome, sobrenome, email, logradouro, numero, bairro, cidade, estado, pais, nacionalidade);
+//        Pessoa novaPessoa = new Pessoa(idPessoa, nome, sobrenome, email, logradouro, numero, bairro, cidade, estado, pais, nacionalidade);
 
         System.out.println("Pessoa criada com sucesso!");
         return novaPessoa;
-    }
+    }*/
 
     private static void exibirPessoa(Pessoa pessoa) {
         System.out.println("\n--- Informações da Pessoa ---");
         System.out.println(pessoa.toString());
     }
 
-    private static void editarPessoa(Scanner scanner, Pessoa pessoa) {
+    /*private static void editarPessoa(Scanner scanner, Pessoa pessoa) {
         System.out.println("\n--- Editar Pessoa ---");
 
         System.out.print("Nome (" + pessoa.getNome() + "): ");
@@ -135,5 +132,5 @@ public class Main {
         if (!nacionalidade.isEmpty()) pessoa.setNacionalidade(nacionalidade);
 
         System.out.println("Informações da pessoa atualizadas com sucesso!");
-    }
+    }*/
 }
