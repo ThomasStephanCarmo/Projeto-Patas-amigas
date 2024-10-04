@@ -1,4 +1,3 @@
-
 public class Funcionarios extends Pessoa {
 
 private String dataContratacao;

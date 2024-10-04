@@ -1,4 +1,3 @@
-
 public class Tutor extends Pessoa {
 
     private int numeroAnimaisCustodia;

@@ -112,45 +112,4 @@ public class Pessoa {
     }
 
 
-    private Pessoa criarPessoa(Scanner scanner) {
-            System.out.println("\n--- Criar Nova Pessoa ---");
-
-            System.out.print("CPF: ");
-            String cpf = scanner.nextLine();
-
-            System.out.print("Data de Nascimento: ");
-            String dataNascimento = scanner.nextLine();
-
-            System.out.print("E-mail: ");
-            String email = scanner.nextLine();
-
-            System.out.print("Endereço: ");
-            String endereco = scanner.nextLine();
-
-            System.out.print("Nome: ");
-            String nome = scanner.nextLine();
-
-            System.out.print("Senha: ");
-            String senha = scanner.nextLine();
-
-            System.out.print("Telefone: ");
-            String telefone = scanner.nextLine();
-
-
-            System.out.print("Você é um Adotante?");
-            boolean isAdotante = scanner.hasNext();
-
-            System.out.print("Você é um Tutor?");
-            boolean isTutor = scanner.hasNext();
-
-            System.out.print("Você é um Funcionário?");
-            boolean isFuncionario = scanner.hasNext();
-
-
-            Pessoa novaPessoa = new Pessoa(cpf, dataNascimento, email, endereco, nome, senha, telefone, isAdotante, isTutor, isFuncionario);
-
-            System.out.println("Pessoa criada com sucesso!");
-            return novaPessoa;
-        }
-
 }
