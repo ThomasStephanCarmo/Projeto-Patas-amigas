@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Pessoa pessoa = new Pessoa();
+        Pessoa pessoa = new Pessoa("464.464.848-52", "Rua Elvira de Bortole", "Mateus", "23/04", "mateusacdem@gmail.com", "sai fora rapaz", "1194133426", true, false, false );
 
         System.out.println("Bem-vindo ao sistema de gerenciamento de Pessoas!");
 

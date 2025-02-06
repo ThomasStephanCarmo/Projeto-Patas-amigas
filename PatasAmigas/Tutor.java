@@ -6,7 +6,7 @@ public class Tutor extends Pessoa {
 
     public Tutor (String CPF, String endereco, String nome, String dataDeNascimento, String email, String senha, String telefone,int numeroAnimaisCustodia){
 
-        super(CPF, endereco,nome, dataDeNascimento, email, senha, telefone);
+        super(CPF, endereco,nome, dataDeNascimento, email, senha, telefone, false, true, false);
 
         this.numeroAnimaisCustodia = numeroAnimaisCustodia;
 }
